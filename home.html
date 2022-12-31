@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>名片產生</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static',     filename='home.css') }}">
+<link rel="stylesheet" href="./home.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Canvas -->
+<canvas class="orb-canvas"></canvas>
+<!-- Overlay -->
+<div class="overlay">
+  <!-- Overlay inner wrapper -->
+  <div class="overlay__inner">
+    <!-- Title -->
+    <h1 class="overlay__title">
+      嘿!歡迎你來到一個可以製作專屬於你的
+      <span class="text-gradient">名片</span> 的地方
+    </h1>
+    <!-- Description -->
+    <p class="overlay__description">
+      這裡將透過discord機器人進行運作
+      簡單輸入資訊即可產生連結。
+      <strong>準備好開始了嗎?</strong>
+    </p>
+    <!-- Buttons -->
+    <div class="overlay__btns">
+
+      <button class="overlay__btn overlay__btn--transparent">
+        <a href="https://discord.com/api/oauth2/authorize?client_id=1058704029728907275&permissions=2885807168&scope=bot" target="_blank">
+
+          邀請機器人
+        </a>
+      </button>
+
+      <button class="overlay__btn overlay__btn--colors">
+        <span>換個顏色?</span>
+        <span class="overlay__btn-emoji">🎨</span>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
